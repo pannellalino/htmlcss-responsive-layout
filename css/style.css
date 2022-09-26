@@ -152,6 +152,21 @@ header .fa-solid{
 }
 
 @media (min-width:1080px){
+  .app .container-big-box{
+    display: flex;
+    flex-direction: row;
+  }
+  .app .container-box{
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+  .app .container-big-box{
+    height: 100%;
+  }
+  .app .img img{
+    height: 100%;
+    width:max-content;
+  }
   .planning .container{
     display: flex;
     align-items: flex-end;
