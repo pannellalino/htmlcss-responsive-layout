@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding: 50px 0;
   width: 80%;
@@ -67,7 +67,7 @@ header .fa-solid{
 
 .app .box a{
   font-size: 1.2rem;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
   background-color: #0C6BFB;
@@ -78,11 +78,14 @@ header .fa-solid{
 }
 
 .app .box a .fa-brands{
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .app .box img{
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
 }
 
 .app .box .fa-solid{
@@ -103,6 +106,12 @@ header .fa-solid{
   }
   .app .box{
     width: calc(100% / 3 - 20px);
+  }
+  .app .box img{
+    display: block;
+    max-height: 400px;
+    width: auto;
+    text-align: left;
   }
 }
 
