@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   padding: 50px 0;
   width: 80%;
@@ -37,14 +37,22 @@ header{
   height: 100px;
   background-color: #0C6BFB;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 30px;
 }
 
 header .fa-solid{
   font-size: 30px;
+}
+
+header .menu{
+  display: none;
+
+}
+
+.head-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .planning, .benefits, .cda{
@@ -152,6 +160,23 @@ header .fa-solid{
 }
 
 @media (min-width:1080px){
+  .head-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head-container i{
+    display: none;
+  }
+  header .menu{
+    display: flex;
+    list-style: none;
+  }
+  header .menu li{
+    margin: 10px;
+  }
   .app .container-big-box{
     display: flex;
     flex-direction: row;
