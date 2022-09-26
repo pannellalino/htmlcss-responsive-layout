@@ -9,9 +9,10 @@ body{
 }
 
 .container{
-  width: 400px;
+  max-width: 1200px;
   margin: auto;
   padding: 50px 0;
+  width: 80%;
 }
 
 .app .box:first-child .container-box{
@@ -19,9 +20,16 @@ body{
 }
 
 .container-box{
-  width: 300px;
+  width: 80%;
   margin: auto;
   padding: 50px 0;
+}
+
+.box{
+  background-color: #A7D5FF;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 header{
@@ -40,14 +48,7 @@ header .fa-solid{
 }
 
 .planning, .benefits, .cda{
-  background-color: #847BDD;
-}
-
-.box{
-  border-radius: 20px;
-  background-color: #A7D5FF;
-  margin-bottom: 30px;
-  text-align: center;
+  background-color: #847CDE;
 }
 
 .app .box:first-child{
@@ -88,4 +89,56 @@ header .fa-solid{
   font-size: 100px;
   color: #0C6BFB;
   margin-bottom: 30px;
+}
+
+@media (min-width:700px){
+  .app .container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .app .box:first-child{
+    width: calc(100% - 100%/3 - 20px);
+  }
+  .app .box{
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+.planning .box{
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  padding: 30px;
+}
+
+.planning .box h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.planning .box p{
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.planning .box img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.planning .box:last-child{
+  font-style: oblique;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+.planning .box i{
+  padding: 10px 15px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  background-color: #847CDE;
+  border-radius: 50%;
 }
