@@ -48,7 +48,7 @@ header .fa-solid{
 }
 
 .planning, .benefits, .cda{
-  background-color: #847CDE;
+  background-color: #827DE0;
 }
 
 .app .box:first-child{
@@ -111,7 +111,6 @@ header .fa-solid{
     display: block;
     max-height: 400px;
     width: auto;
-    text-align: left;
   }
 }
 
@@ -150,4 +149,32 @@ header .fa-solid{
   margin-bottom: 30px;
   background-color: #847CDE;
   border-radius: 50%;
+}
+
+@media (min-width:1080px){
+  .planning .container{
+    display: flex;
+    align-items: flex-end;
+  }
+  .planning .box-left img{
+    margin-bottom: 100px;
+  }
+  .planning .box-left p{
+    margin-bottom: 0;
+  }
+  .planning .box-left{
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .planning .box-right{
+    margin-bottom: 0;
+    width: 40%;
+  }
+  .planning .box-right img{
+    width: 60%;
+  }
+  .planning .box-right h2{
+    font-size: 30px;
+  }
 }
