@@ -55,7 +55,7 @@ header .menu{
   align-items: center;
 }
 
-.planning, .benefits, .cda{
+.planning, .benefits, .cta{
   background-color: #827DE0;
 }
 
@@ -172,10 +172,18 @@ header .menu{
   }
   header .menu{
     display: flex;
+    align-items: center;
     list-style: none;
   }
   header .menu li{
     margin: 10px;
+  }
+  header .menu li:last-child{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    vertical-align: middle;
   }
   .app .container-big-box{
     display: flex;
@@ -217,4 +225,18 @@ header .menu{
   .planning .box-right h2{
     font-size: 30px;
   }
+}
+
+footer{
+  background-color: #272727;
+  color: white;
+  text-align: center;
+}
+
+footer p{
+  margin-bottom: 50px;
+}
+
+footer .container{
+  max-width: 500px;
 }
